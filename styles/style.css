@@ -1,0 +1,81 @@
+/* Comportamento normal Desktop */
+.video-destaques {
+    width: 100%;
+    height: 450px;
+}
+
+.navbar {
+    background-color: #ccc;
+}
+
+.bg-gray {
+    background-color: #eee;
+}
+
+.brand-image {
+    height: 100%;
+    width: 75px;
+}
+
+.imagem-padrao {
+    width: 250px;
+}
+
+.link-padrao {
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+.redes {
+    width: 40px;
+    transition: 0.5s ease;
+}
+
+.redes:hover {
+    filter: blur(1px);
+    transition: 0.5s ease;
+}
+
+.link-padrao:hover {
+    transition: 0.5 ease;
+    color: rgb(80, 79, 79);
+}
+
+li a.nav-link {
+    color: #000;
+}
+
+li a.nav-link:hover {
+    transition: 0.5 ease;
+    color: rgb(80, 79, 79);
+}
+
+#pucminas {
+    font-weight: 700;
+}
+
+/* Breakpoints para resoluções específicas (smartphones, tablets, dispositivos pequenos) */
+/* Breakpoint: 600 */
+@media screen and (max-width: 600px) {
+    .video-destaques {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+/* Breakpoint: 1024 */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .video-destaques {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Breakpoint: 1200 */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .video-destaques {
+        width: 100%;
+        height: 350px;
+    }
+}
