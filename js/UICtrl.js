@@ -187,4 +187,3 @@ function importUICtrl() {
 }
 
 document.addEventListener("DOMContentLoaded", importUICtrl());
-// document.addEventListener("DOMContentLoaded", setDetalhesGame());

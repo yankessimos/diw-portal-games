@@ -34,9 +34,3 @@ async function getPesquisaGames(pesquisa) {
 
   return data;
 }
-
-// Maneira de importar as funções para o APP
-function importAPICtrl() {
-  getGames();
-  getPublishers();
-}

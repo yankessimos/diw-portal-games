@@ -38,15 +38,6 @@
   color: rgb(80, 79, 79);
 }
 
-li a.nav-link {
-  color: #000;
-}
-
-li a.nav-link:hover {
-  transition: 0.5 ease;
-  color: rgb(80, 79, 79);
-}
-
 #pucminas {
   font-weight: 700;
 }
