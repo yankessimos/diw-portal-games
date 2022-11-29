@@ -8,361 +8,35 @@
     <link rel="stylesheet" type="text/css" href="/styles/style.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/styles/reset.css" media="screen" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Gaming Zone - O seu portal de jogos!</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg py-lg-0 py-xl-0 py-xxl-0 navbar-light">
+    <!-- Navbar -->
+    <nav class="navbar py-lg-0 py-xl-0 py-xxl-0 navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="brand-image" src="/images/logo.png" alt="Crash Bandicoot" /></a>
-        <button class="navbar-toggler border border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="nav mb-2 mb-sm-2 mb-md-2 mb-lg-0 mb-xl-0 mb-xxl-0 justify-content-end">
-            <li class="nav-item border-2 border-end border-dark">
-              <a class="nav-link" href="#">destaques</a>
-            </li>
-            <li class="nav-item border-2 border-end border-dark">
-              <a class="nav-link" href="#">lançamentos</a>
-            </li>
-            <li class="nav-item border-2 border-end border-dark">
-              <a class="nav-link" href="#">plataformas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">publishers</a>
-            </li>
-          </ul>
+        <a class="navbar-brand" href="index.html"><img class="brand-image" src="/images/logo.png" alt="Gaming Zone" /></a>
 
-          <form class="justify-content-begin bg-light border border-secondary rounded">
-            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-            <input class="me-0" type="search" placeholder="Pesquisar games" aria-label="Search" />
-          </form>
-        </div>
+        <form class="justify-content-begin bg-light border border-secondary rounded">
+          <a id="botao-pesquisa" class="btn" href="#"><i class="fas fa-search"></i></a>
+          <input id="campo-pesquisa" class="me-0" type="search" placeholder="Pesquisar games" aria-label="Search" />
+        </form>
       </div>
     </nav>
 
-    <section id="destaques" class="bg-gray">
-      <div class="container-fluid py-4">
-        <h1 class="d-flex justify-content-center fw-bold">Destaques</h1>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide pt-3 pb-5" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <iframe class="video-destaques" src="https://www.youtube.com/embed/7-IwwvIrawI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="col">
-                    <h2>Crash Bandicoot 4: It's About Time</h2>
-                    <p class="text-start text-wrap">
-                      <span class="fw-bold">Sobre:</span> O jogo é uma continuação de Crash Bandicoot: Warped. Após sua derrota nas mãos de Crash Bandicoot em Crash Bandicoot: Warped , Uka Uka tenta libertar a si mesmo e aos Doutores Neo
-                      Cortex e Nefarious Tropy de sua prisão no passado. Seu último esforço abre um buraco no tecido do espaço e do tempo e o faz desmaiar. Cortex e N. Tropy escapam rapidamente, abandonando Uka Uka, e descobrem que a fenda
-                      que eles usam liga seu universo ao resto do multiverso, e decidir utilizá-lo para conquistar todas as dimensões. Para garantir o sucesso, a dupla cria o Rift Generator, um gerador capaz de abrir outras fendas
-                      espaço-tempo e recrutar ajuda dos Doutores N. Gin e Nitrus Brio para fornecer um exército em antecipação à interferência de seus inimigos.
-                    </p>
-                    <div class="row">
-                      <div class="col">
-                        <p class="text-start text-wrap"><span class="fw-bold">Publisher:</span> Activision</p>
-                      </div>
-                      <div class="col">
-                        <p class="text-start text-wrap"><span class="fw-bold">Lançamento:</span> Out, 2020</p>
-                      </div>
-                    </div>
-                    <p class="text-start text-wrap"><span class="fw-bold">Plataformas:</span> PlayStation 4, Xbox One, Nintendo Switch, PlayStation 5, Xbox Series X/S, Microsoft Windows</p>
-                    <p class="text-start text-wrap"><span class="fw-bold">Gênero:</span> Plataforma, Aventura</p>
-                    <p class="text-start text-wrap"><span class="fw-bold">Avaliação:</span> <span class="fw-bold text-danger">94</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <iframe
-                      class="video-destaques"
-                      src="https://www.youtube.com/embed/KdhH0ApBMKQ"
-                      title="Donkey Kong Country Returns Trailer"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <div class="col">
-                    <h2>Donkey Kong Country Returns</h2>
-                    <p class="text-start text-wrap">
-                      <span class="fw-bold">Sobre:</span> A história do jogo gira em torno de criaturas conhecidas como Tikis, que são novas adições à série. Os diferentes tipos de Tikis cumprem o papel de antagonistas na história,
-                      substituindo os Kremlings de Donkey Kong Country. Cranky Kong, proprietário de lojas pela ilha, é o único membro da família Kong que aparece além de Donkey e Diddy. A história começa quando um grupo de Tikis malignos
-                      conhecidos como a Tiki Tak Tribe chega na Donkey Kong Island depois de ser acordado por uma erupção vulcânica, tocando música para hipnotizar os animais, principalmente elefantes, zebras, girafas e esquilos na ilha
-                      para roubar as bananas de Donkey Kong e Diddy Kong. Já que Donkey Kong é resistente à música dos Tikis, ele trabalha com Diddy para recuperar seu monte de bananas.
-                    </p>
-                    <div class="row">
-                      <div class="col">
-                        <p class="text-start text-wrap"><span class="fw-bold">Publisher:</span> Nintendo</p>
-                      </div>
-                      <div class="col">
-                        <p class="text-start text-wrap"><span class="fw-bold">Lançamento:</span> Nov, 2010</p>
-                      </div>
-                    </div>
-                    <p class="text-start text-wrap"><span class="fw-bold">Plataformas:</span> Wii, Nintendo 3DS, Wii U, Nvidia Shield TV</p>
-                    <p class="text-start text-wrap"><span class="fw-bold">Gênero:</span> Plataforma</p>
-                    <p class="text-start text-wrap"><span class="fw-bold">Avaliação:</span> <span class="fw-bold text-danger">95</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <iframe
-                      class="video-destaques"
-                      src="https://www.youtube.com/embed/tKlRN2YpxRE"
-                      title="Mario Kart 8 Deluxe"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <div class="col">
-                    <h2>Mario Kart 8</h2>
-                    <p class="text-start text-wrap">
-                      <span class="fw-bold">Sobre:</span> Mario Kart 8 é um jogo de corrida de karts desenvolvido e publicado pela Nintendo para o Wii U. É o décimo primeiro título da franquia Mario Kart, o oitavo da série principal e foi
-                      lançado em 30 de Maio de 2014. O jogo tem como principal novidade os circuitos anti-gravitacionais e pistas antigas dos jogos anteriores. Assim como os jogos anteriores, possui modos um jogador e multijogador local e
-                      online. O jogo traz circuitos anti-gravidade permitindo que os jogadores dirijam o veículo em paredes e tetos, novos personagens, pistas inéditas e conhecidas pelos fãs e novos modos de jogo. Alguns elementos de Mario
-                      Kart Wii e Mario Kart 7 foram reutilizados, como corridas com 12 pilotos, condução de baixo d'agua, motos e edição de componentes do veículo.
-                    </p>
-                    <div class="row">
-                      <div class="col">
-                        <p class="text-start text-wrap"><span class="fw-bold">Publisher:</span> Nintendo</p>
-                      </div>
-                      <div class="col">
-                        <p class="text-start text-wrap"><span class="fw-bold">Lançamento:</span> May, 2014</p>
-                      </div>
-                    </div>
-                    <p class="text-start text-wrap"><span class="fw-bold">Plataformas:</span> Wii U, Nintendo Switch</p>
-                    <p class="text-start text-wrap"><span class="fw-bold">Gênero:</span> Corrida</p>
-                    <p class="text-start text-wrap"><span class="fw-bold">Avaliação:</span> <span class="fw-bold text-danger">94</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+    <section>
+      <div class="container py-4">
+        <h1 class="fw-bold">Games</h1>
+        <div id="games" class="row"></div>
       </div>
     </section>
 
-    <section id="lancamentos">
+    <section class="bg-gray">
       <div class="container py-4">
-        <div class="row pb-4">
-          <div class="col-12 col-lg-8">
-            <h1 class="fw-bold">Lançamentos</h1>
-          </div>
-          <div class="col col-lg-2 d-flex justify-content-end">
-            <div class="dropdown">
-              <button class="btn dropdown-toggle border border-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Ordem: ______</button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Mais vistos</a></li>
-                <li><a class="dropdown-item" href="#">Maiores classificações</a></li>
-                <li><a class="dropdown-item" href="#">Ordem alfabética</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col col-lg-2 d-flex justify-content-end">
-            <div class="dropdown">
-              <button class="btn dropdown-toggle border border-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Gênero: ______</button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Arcade</a></li>
-                <li><a class="dropdown-item" href="#">RPG</a></li>
-                <li><a class="dropdown-item" href="#">MOBA</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row pb-4">
-          <div class="col">
-            <div class="row">
-              <div class="col-11 d-flex justify-content-begin"><h2 class="fw-bold">Elden Ring</h2></div>
-              <div class="col-1 d-flex justify-content-end"><h2 class="fw-bold">93</h2></div>
-            </div>
-            <iframe class="pb-4" src="https://www.youtube.com/embed/E3Huy2cdih0"></iframe>
-            <a class="link-padrao d-flex justify-content-begin" href="#">Mais detalhes...</a>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="col-11 d-flex justify-content-begin"><h2 class="fw-bold">God of War</h2></div>
-              <div class="col-1 d-flex justify-content-end"><h2 class="fw-bold">90</h2></div>
-            </div>
-            <iframe class="pb-4" src="https://www.youtube.com/embed/x6oF3Jxu7X0"></iframe>
-            <a class="link-padrao d-flex justify-content-begin" href="#">Mais detalhes...</a>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="col-11 d-flex justify-content-begin"><h2 class="fw-bold">Horizon F West</h2></div>
-              <div class="col-1 d-flex justify-content-end"><h2 class="fw-bold">93</h2></div>
-            </div>
-            <iframe class="pb-4" src="https://youtube.com/embed/ztwwQByMmmE"></iframe>
-            <a class="link-padrao d-flex justify-content-begin" href="#">Mais detalhes...</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="row">
-              <div class="col-11 d-flex justify-content-begin"><h2 class="fw-bold">The Quarry</h2></div>
-              <div class="col-1 d-flex justify-content-end"><h2 class="fw-bold">92</h2></div>
-            </div>
-            <iframe class="pb-4" src="https://youtube.com/embed/Zh2K7SxRHmo"></iframe>
-            <a class="link-padrao d-flex justify-content-begin" href="#">Mais detalhes...</a>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="col-11 d-flex justify-content-begin"><h2 class="fw-bold">Stardew Valley</h2></div>
-              <div class="col-1 d-flex justify-content-end"><h2 class="fw-bold">100</h2></div>
-            </div>
-            <iframe class="pb-4" src="https://youtube.com/embed/ot7uXNQskhs"></iframe>
-            <a class="link-padrao d-flex justify-content-begin" href="#">Mais detalhes...</a>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="col-11 d-flex justify-content-begin"><h2 class="fw-bold">Destiny 2</h2></div>
-              <div class="col-1 d-flex justify-content-end"><h2 class="fw-bold">89</h2></div>
-            </div>
-            <iframe class="pb-4" src="https://youtube.com/embed/RfUoz1_i5_E"></iframe>
-            <a class="link-padrao d-flex justify-content-begin" href="#">Mais detalhes...</a>
-          </div>
-          <div class="col"><!-- DIV FANTASMA --></div>
-        </div>
-        <div class="d-flex justify-content-end pt-4">
-          <button type="button" class="btn btn-secondary"><i class="fas fa-plus"></i> Carregar mais lançamentos</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="plataformas">
-      <div class="container py-4">
-        <h1 class="fw-bold pb-4">Plataformas</h1>
-        <div class="row">
-          <div class="col">
-            <h2 class="fw-bold">PlayStation</h2>
-            <img class="imagem-padrao" src="/images/playstation.jpg" alt="PlayStation" />
-            <br />
-            <span class="fw-bold">Principais Jogos</span>
-            <ul class="list-group">
-              <li class="list-item ps-3">■ Spider-Man</li>
-              <li class="list-item ps-3">■ Horizon Forbidden West</li>
-              <li class="list-item ps-3">■ Deathloop</li>
-            </ul>
-            <div class="d-flex justify-content-end">
-              <a class="link-padrao pt-4" href="#">Mais detalhes...</a>
-            </div>
-          </div>
-          <div class="col">
-            <h2 class="fw-bold">Xbox</h2>
-            <img class="imagem-padrao" src="/images/xbox.png" alt="Xbox" />
-            <br />
-            <span class="fw-bold">Principais Jogos</span>
-            <ul class="list-group">
-              <li class="list-item ps-3">■ Red Dead Redemption 2</li>
-              <li class="list-item ps-3">■ The Witcher 3</li>
-              <li class="list-item ps-3">■ Gears 5</li>
-            </ul>
-            <div class="d-flex justify-content-end">
-              <a class="link-padrao pt-4" href="#">Mais detalhes...</a>
-            </div>
-          </div>
-          <div class="col">
-            <h2 class="fw-bold">Wii</h2>
-            <img class="imagem-padrao" src="/images/wii.png" alt="Wii" />
-            <br />
-            <span class="fw-bold">Principais Jogos</span>
-            <ul class="list-group">
-              <li class="list-item ps-3">■ Madworld</li>
-              <li class="list-item ps-3">■ Mario Kart</li>
-              <li class="list-item ps-3">■ Wii Sports</li>
-            </ul>
-            <div class="d-flex justify-content-end">
-              <a class="link-padrao pt-4" href="#">Mais detalhes...</a>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex justify-content-end pt-4">
-          <button type="button" class="btn btn-secondary"><i class="fas fa-plus"></i> Carregar mais plataformas</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="publishers" class="bg-gray">
-      <div class="container py-4">
-        <h1 class="fw-bold pb-4">Publishers</h1>
-        <div class="row">
-          <div class="col">
-            <h2 class="fw-bold">Nintendo</h2>
-            <img class="imagem-padrao" src="/images/nintendo.png" alt="Nintendo" />
-            <br />
-            <span class="fw-bold">Principais Jogos</span>
-            <ul class="list-group">
-              <li class="list-item ps-3">■ Super Mario Bros</li>
-              <li class="list-item ps-3">■ Mario Kart</li>
-              <li class="list-item ps-3">■ Donkey Kong</li>
-            </ul>
-            <div class="d-flex justify-content-end">
-              <a class="link-padrao pt-4" href="#">Mais detalhes...</a>
-            </div>
-          </div>
-          <div class="col">
-            <h2 class="fw-bold">Activision</h2>
-            <img class="imagem-padrao" src="/images/activision.png" alt="Activision" />
-            <br />
-            <span class="fw-bold">Principais Jogos</span>
-            <ul class="list-group">
-              <li class="list-item ps-3">■ Crash Bandicoot 4</li>
-              <li class="list-item ps-3">■ Call of Duty</li>
-              <li class="list-item ps-3">■ Destiny</li>
-            </ul>
-            <div class="d-flex justify-content-end">
-              <a class="link-padrao pt-4" href="#">Mais detalhes...</a>
-            </div>
-          </div>
-          <div class="col">
-            <h2 class="fw-bold">Blizzard</h2>
-            <img class="imagem-padrao" src="/images/blizzard.png" alt="Blizzard" />
-            <br />
-            <span class="fw-bold">Principais Jogos</span>
-            <ul class="list-group">
-              <li class="list-item ps-3">■ World of Warcraft</li>
-              <li class="list-item ps-3">■ Hearthstone</li>
-              <li class="list-item ps-3">■ Diablo</li>
-            </ul>
-            <div class="d-flex justify-content-end">
-              <a class="link-padrao pt-4" href="#">Mais detalhes...</a>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex justify-content-end pt-4">
-          <button type="button" class="btn btn-secondary"><i class="fas fa-plus"></i> Carregar mais publishers</button>
-        </div>
+        <h1 class="fw-bold">Publishers</h1>
+        <div id="publishers" class="row"></div>
       </div>
     </section>
 
@@ -372,17 +46,16 @@
           <div class="col-12 col-md-8">
             <h1 class="fw-bold pb-4">Sobre</h1>
             <p class="text-start text-wrap">
-              A Gaming Zone é um portal de jogos criado por um aluno da PUC Minas para a disciplina de Desenvolvimento de Interfaces Web, que visa trazer um conteúdo demonstrativo dos jogos para o usuário que é um entusiasta em críticas e
-              que gosta de ler sobre os jogos mais quentes do momento. Aqui você encontrará jogos de todas as plataformas, com um resumo sobre a campanha que o espera e toda a trama que trás o jogo, sem nenhum spoiler, é claro! Navegue em
-              nosso site totalmente gratuito, em um experimento da faculdade!
+              A Gaming Zone é um portal de jogos criado por um aluno da PUC Minas para a disciplina de Desenvolvimento de Interfaces Web, que visa trazer um conteúdo demonstrativo dos jogos para o usuário que é um entusiasta em críticas e que gosta de ler sobre os jogos mais quentes do momento. Aqui
+              você encontrará jogos de todas as plataformas, com um resumo sobre a campanha que o espera e toda a trama que trás o jogo, sem nenhum spoiler, é claro! Navegue em nosso site totalmente gratuito, em um experimento da faculdade!
             </p>
           </div>
           <div class="col-12 col-md-4">
             <h1 class="fw-bold pb-4">Editorial</h1>
             <ul class="list-group pb-4">
-              <li class="list-item pb-3 fs-5"><i class="fas fa-user" style="font-size: 20px"></i><span class="fw-bold ps-2"> Redação:</span> Yan Késsimos Ricoy</li>
-              <li class="list-item pb-3 fs-5"><i class="fas fa-user" style="font-size: 20px"></i><span class="fw-bold ps-2"> Pesquisa:</span> Yan Késsimos Ricoy</li>
-              <li class="list-item fs-5"><i class="fas fa-user" style="font-size: 20px"></i><span class="fw-bold ps-2"> Gerente Geral:</span> Yan Késsimos Ricoy</li>
+              <li class="list-item pb-3 fs-5"><i class="fas fa-user-graduate" style="font-size: 20px"></i><span class="fw-bold ps-1"> Aluno:</span> Yan Késsimos Ricoy</li>
+              <li class="list-item pb-3 fs-5"><i class="fas fa-id-card" style="font-size: 20px"></i><span class="fw-bold ps-1"> Número de matrícula:</span> 622587</li>
+              <li class="list-item fs-5"><i class="fas fa-graduation-cap" style="font-size: 20px"></i><span class="fw-bold ps-1"> Curso:</span> Análise e Desenvolvimento de Sistemas</li>
             </ul>
 
             <h4 class="fw-bold pb-3">Redes sociais:</h4>
@@ -405,6 +78,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-gray">
       <div class="container">
         <div class="d-flex align-items-center p-3">
@@ -412,11 +86,14 @@
             <p id="copyright">Copyright 2022 © - Disciplina de Desenvolvimento de Interfaces Web - <span id="pucminas">ICEI PUC Minas</span></p>
           </div>
           <div class="d-flex justify-content-end ms-auto">
-            <a href="#"><img class="brand-image" src="/images/logo.png" alt="Gaming Zone" /></a>
+            <a href="index.html"><img class="brand-image" src="/images/logo.png" alt="Gaming Zone" /></a>
           </div>
 
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-          <script src="./js/conection.js"></script>
+          <script src="./js/APICtrl.js"></script>
+          <script src="./js/Ctrl.js"></script>
+          <script src="./js/UICtrl.js"></script>
+          <script src="./js/App.js"></script>
         </div>
       </div>
     </footer>
