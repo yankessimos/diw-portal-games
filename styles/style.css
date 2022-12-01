@@ -13,8 +13,12 @@
 
 .imagem-padrao {
   height: 250px;
-  margin: auto;
   padding: 15px 0;
+}
+
+.imagem-padrao img {
+  max-height: 100%;
+  margin: auto;
 }
 
 .link-padrao {
@@ -40,4 +44,8 @@
 
 #pucminas {
   font-weight: 700;
+}
+
+.hidden {
+  display: none !important;
 }

@@ -7,13 +7,19 @@ const UISelectors = {
   campoPesquisa: document.querySelector("#campo-pesquisa"),
   resultPesquisa: document.querySelector("#result-pesquisa"),
   gamesPesquisa: document.querySelector("#games-pesquisa"),
+  spinner: [document.querySelector(".spinner-1"), document.querySelector(".spinner-2"), document.querySelector(".spinner-3"), document.querySelector(".spinner-4"), document.querySelector(".spinner-5")],
 };
 
 const urlParams = new URLSearchParams(window.location.search);
 const site = window.location.href;
 
+function hideSpinner(index) {
+  UISelectors.spinner[index].classList.add("hidden");
+}
+
 async function setGames() {
   const games = await getGames(6);
+  hideSpinner(0);
 
   games.results.forEach((game) => {
     let article = document.createElement("article");
@@ -31,7 +37,7 @@ async function setGames() {
           <b>Lançamento:</b> ${formataData(game.released)}
         </li>
         <li class="list-item">
-          <b>Nota:</b> ${game.rating}/5
+          <b>Nota:</b> <span class="badge rounded-pill bg-success">${game.rating}/5</span>
         </li>
       </ul>
       <div class="d-flex justify-content-end">
@@ -47,10 +53,11 @@ async function setGames() {
 
 async function setPublishers() {
   const publishers = await getPublishers(6);
+  hideSpinner(1);
 
   publishers.results.forEach((publisher) => {
     let article = document.createElement("article");
-    article.className = "col-12 col-sm-4 p-5 shadow-sm";
+    article.className = "col-12 col-sm-4 p-5 shadow-sm bg-white";
 
     article.innerHTML = `
       <h5 class="fw-bold">${publisher.name}</h5>
@@ -60,7 +67,7 @@ async function setPublishers() {
       <br />
       <ul class="list-group">
         <li class="list-item">
-          <b>Lançamentos:</b> ${publisher.games_count}
+          <b>Lançamentos:</b> <span class="badge rounded-pill bg-primary">${publisher.games_count}</span>
         </li>
       </ul>
       <div class="d-flex justify-content-end">
@@ -77,6 +84,7 @@ async function setPublishers() {
 async function setDetalhesGame() {
   const idGame = parseInt(urlParams.get("id"));
   const game = await getDescricaoGame(idGame);
+  hideSpinner(2);
 
   const div = document.createElement("div");
   div.className = "container p-4";
@@ -114,6 +122,7 @@ async function setDetalhesGame() {
 async function setDetalhesPublisher() {
   const idPublisher = parseInt(urlParams.get("id"));
   const publisher = await getDescricaoPublisher(idPublisher);
+  hideSpinner(3);
 
   const div = document.createElement("div");
   div.className = "container p-4";
@@ -139,6 +148,7 @@ async function setDetalhesPublisher() {
 async function setResultadosPesquisa() {
   const pesquisa = urlParams.get("res");
   const games = await getPesquisaGames(pesquisa);
+  hideSpinner(4);
 
   UISelectors.resultPesquisa.innerText = pesquisa;
 
@@ -158,7 +168,7 @@ async function setResultadosPesquisa() {
           <b>Lançamento:</b> ${formataData(game.released)}
         </li>
         <li class="list-item">
-          <b>Nota:</b> ${game.rating}/5
+          <b>Nota:</b> <span class="badge rounded-pill bg-success">${game.rating}/5</span>
         </li>
       </ul>
       <div class="d-flex justify-content-end">
