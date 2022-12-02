@@ -13,3 +13,13 @@ document.querySelector("#botao-pesquisa").addEventListener("click", (e) => {
 
   window.location.href = "./pesquisa.html?res=" + inputPesquisa;
 });
+
+document.querySelector("#campo-pesquisa").addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+
+    const inputPesquisa = document.querySelector("#campo-pesquisa").value;
+
+    window.location.href = "./pesquisa.html?res=" + inputPesquisa;
+  }
+});
