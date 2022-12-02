@@ -92,6 +92,7 @@ async function setDetalhesGame() {
   div.innerHTML = `
       <h1 class="fw-bold">${game.name}</h1>
       <div id="platforms"></div>
+      <div id="genres"></div>
       <div class="d-flex align-items-center my-3">
         <img src="${game.background_image}" style="max-height: 450px" />
       </div>
@@ -116,6 +117,14 @@ async function setDetalhesGame() {
     span.innerText = plataforma.platform.name;
 
     document.querySelector("#platforms").appendChild(span);
+  });
+
+  game.genres.forEach((genre) => {
+    let span = document.createElement("span");
+    span.className = "badge rounded-pill bg-danger mt-2 mx-1";
+    span.innerText = genre.name;
+
+    document.querySelector("#genres").appendChild(span);
   });
 }
 
