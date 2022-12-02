@@ -160,34 +160,48 @@ async function setResultadosPesquisa() {
   const games = await getPesquisaGames(pesquisa);
   hideSpinner(4);
 
-  games.results.forEach((game) => {
-    let article = document.createElement("article");
-    article.className = "col-12 col-md-6 col-lg-4 p-5 my-3 shadow-sm";
+  if (games.count !== 0) {
+    games.results.forEach((game) => {
+      let article = document.createElement("article");
+      article.className = "col-12 col-md-6 col-lg-4 p-5 my-3 shadow-sm";
 
-    article.innerHTML = `
-      <h5 class="fw-bold">${game.name}</h5>
-      <div class="imagem-padrao d-flex align-items-center">
-        <img src="${game.background_image}" />
-      </div>
-      <br />
-      <h5 class="fw-bold" style="text-decoration: underline">Detalhes</h5>
-      <ul class="list-group">
-        <li class="list-item">
-          <b>Lançamento:</b> ${formataData(game.released)}
-        </li>
-        <li class="list-item">
-          <b>Nota:</b> <span class="badge rounded-pill bg-success">${game.rating}/5</span>
-        </li>
-      </ul>
-      <div class="d-flex justify-content-end">
-        <a class="link-padrao pt-4" href="./detalhes-jogo.html?id=${game.id}">
-          Mais detalhes...
-        </a>
+      article.innerHTML = `
+        <h5 class="fw-bold">${game.name}</h5>
+        <div class="imagem-padrao d-flex align-items-center">
+          <img src="${game.background_image}" />
+        </div>
+        <br />
+        <h5 class="fw-bold" style="text-decoration: underline">Detalhes</h5>
+        <ul class="list-group">
+          <li class="list-item">
+            <b>Lançamento:</b> ${formataData(game.released)}
+          </li>
+          <li class="list-item">
+            <b>Nota:</b> <span class="badge rounded-pill bg-success">${game.rating}/5</span>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-end">
+          <a class="link-padrao pt-4" href="./detalhes-jogo.html?id=${game.id}">
+            Mais detalhes...
+          </a>
+        </div>
+      `;
+
+      UISelectors.gamesPesquisa.appendChild(article);
+    });
+  } else {
+    const divNula = document.createElement("div");
+    divNula.className = "alert alert-danger d-flex align-items-center my-5";
+
+    divNula.innerHTML = `
+      <i class="fas fa-exclamation-triangle pe-2"></i>
+      <div>
+        <b>Ops!</b> Parece que sua pesquisa não retornou resultados...
       </div>
     `;
 
-    UISelectors.gamesPesquisa.appendChild(article);
-  });
+    UISelectors.gamesPesquisa.appendChild(divNula);
+  }
 }
 
 // Maneira de importar as funções para o APP
