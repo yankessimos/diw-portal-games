@@ -23,7 +23,7 @@ async function setGames() {
 
   games.results.forEach((game) => {
     let article = document.createElement("article");
-    article.className = "col-12 col-sm-4 p-5 shadow-sm";
+    article.className = "col-12 col-sm-4 p-5 my-3 shadow-sm";
 
     article.innerHTML = `
       <h5 class="fw-bold">${game.name}</h5>
@@ -57,7 +57,7 @@ async function setPublishers() {
 
   publishers.results.forEach((publisher) => {
     let article = document.createElement("article");
-    article.className = "col-12 col-sm-4 p-5 shadow-sm bg-white";
+    article.className = "col-12 col-sm-4 p-5 my-3 shadow-sm bg-white";
 
     article.innerHTML = `
       <h5 class="fw-bold">${publisher.name}</h5>
@@ -154,7 +154,7 @@ async function setResultadosPesquisa() {
 
   games.results.forEach((game) => {
     let article = document.createElement("article");
-    article.className = "col-12 col-sm-4 p-5 shadow-sm";
+    article.className = "col-12 col-sm-4 p-5 my-3 shadow-sm";
 
     article.innerHTML = `
       <h5 class="fw-bold">${game.name}</h5>
